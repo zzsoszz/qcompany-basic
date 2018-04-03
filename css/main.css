@@ -27,9 +27,11 @@ h4{
 }
 h5{
 	font-size: 1em;
+	margin:8px 0;
 }
 h6{
 	font-size: 0.707em;
+	letter-spacing: 2px;
 	margin:8px 0;
 }
 .header{
@@ -94,6 +96,11 @@ h6{
 	line-height: 64px;
 	border-bottom: 2px solid #02ffff;
 }
+.page__secondary_title{
+	display: inline-block;
+	line-height: 48px;
+	border-bottom: 1px solid #02aaaa;
+}
 .page__cover{
 	
 }
@@ -135,6 +142,7 @@ h6{
 .card-box__item{
 	background: #303030;
 	margin-top:16px;
+	font-size: 16px;
 }
 .card-box__picbox{
 	height:62.5%;
@@ -143,14 +151,18 @@ h6{
 	width: 100%;
 	height: 100%;
 }
-.card-box__caption,.card-box__description {
+.card-box__caption{
 	padding:16px;
+}
+.card-box__description {
+	padding:16px;
+	font-size: 14px;
 }
 .card-box__action {
 	padding:16px;
 }
 .card-box__action a{
-	color:#ff3154;
+	color:#02ffff;
 	margin-right:16px;
 	line-height:24px;
 	display: inline-block;
@@ -185,13 +197,41 @@ h6{
 	padding:16px;
 }
 .card-box-flow__action a{
-	color:#ff3154;
+	color:#02ffff;
 	margin-right:16px;
 	line-height:24px;
 	display: inline-block;
 }
 
 
+.timeline-box{
+	position: relative;
+	min-height: 200px;
+}
+.timeline-box__line{
+	position: absolute;
+	left: 16px;
+	top: 0;
+	width: 2px;
+	height: 100%;
+	background: #02ffff;
+}
+.timeline-box__row{
+	position: relative;
+	display: flex;
+}
+.timeline-box__dot{
+	margin-left: 8px;
+	border-radius: 8px;
+	height: 16px;
+	width: 16px;
+	background: red;
+	flex:none;
+}
+.timeline-box__content{
+	flex:1;
+	padding: 16px;
+}
 
 
 .contact-box{
@@ -215,12 +255,17 @@ a{
 	color:rgb(255,255,255,0.9);
 }
 
+
+
 .page .contact-box .svg-inline--fa{
 	font-size: 14px;
 	width:16px;
 	height:16px;
 	margin-right: 16px;
 }
+
+
+
 
 .footer{
 	line-height: 2em;
