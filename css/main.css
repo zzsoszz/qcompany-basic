@@ -30,7 +30,7 @@ h5{
 	margin:8px 0;
 }
 h6{
-	font-size: 0.7em;
+	font-size: 14px;
 	letter-spacing: 2px;
 	margin:8px 0;
 }
@@ -221,11 +221,14 @@ h6{
 	display: flex;
 }
 .timeline-box__dot{
+	background-color: #1a191f;
+    border-radius: 50%;
+    padding: 3px;
+    border: 4px solid #02ffff;
 	margin-left: 8px;
-	border-radius: 8px;
+	margin-top: 24px;
 	height: 16px;
 	width: 16px;
-	background: red;
 	flex:none;
 }
 .timeline-box__content{
@@ -235,7 +238,6 @@ h6{
 
 
 .contact-box{
-	padding:8px;
 	line-height: 2em;
 }
 .contact-box .contact-box__mapwrapper{

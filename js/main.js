@@ -21,7 +21,7 @@ function SideMenu(target){
 		$(document).on('click',
 		    $.proxy(
 			function(event){
-			  if( !$(event.target).closest(target).length ) 
+			  if( !$(event.target).closest(target).length || $(event.target).closest(".sidemenu__item").length ) 
 			  {
 				 this.hideMenu();
 			  }
